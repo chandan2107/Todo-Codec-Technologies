@@ -1,0 +1,19 @@
+{
+  "name": "todoo-mern",
+  "version": "1.0.0",
+  "description": "Full Stack Advanced MERN To-Do List Application",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "test:api": "cd backend && node src/testApi.js",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": ["mern", "react", "express", "mongodb", "todo", "jwt"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
